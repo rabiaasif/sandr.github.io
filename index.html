@@ -80,6 +80,7 @@ html {
         }
         nav a:hover {
         background: rgba(0, 0, 0, 0.6);
+        
     }
         section {
             padding: 20px;
@@ -112,17 +113,23 @@ html {
             border-radius: 10px; /* Optional: Rounds the corners */
         }
 
-        #countdown {
-        font-size: 2rem;
+        #countdown-section {
+        height: 100vh; /* Full screen height */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* background: rgba(110, 121, 67, 0.2); Light background tint */
+        width: 100%; /* Full width */
+    }
+
+    /* Style the countdown itself */
+    #countdown {
+        font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        color: #6e7943;
-        margin-top: 20px;
-        padding: 10px;
-        background: rgba(110, 121, 67, 0.1);
+        color: white;
+        padding: 20px;
         border-radius: 10px;
-        display: inline-block;
-        width: auto;
     }
     /* #details {
 
@@ -168,21 +175,21 @@ html {
     /* Alternate background colors for better contrast */
     .details-style div:nth-child(odd) {
         /* background-color: #fff; */
-        background-color: rgba(200, 240, 240, 0.7);
+        background-color: rgb(178, 172, 136, 0.3)
     }
 
     .details-style div:nth-child(even) {
         /* background-color: #f0f0f0; */
-        background-color: rgba(240, 240, 240, 0.7);
+        background-color: rgb(178, 172, 136, 0.3);
         
     }
     .details-style div:hover {
-        background-color: #ffcccc; /* Light red when hovered */
-        cursor: pointer; /* Change cursor to indicate it's interactive */
+        background-color: rgba(136, 178, 138, 0.3); /* Light red when hovered */
+        /* cursor: pointer; Change cursor to indicate it's interactive */
     }
 
     .details-style div.tapped {
-        background-color: #ffcccc !important;
+        background-color: rgb(178, 172, 136, 0.3) !important;
     }
         
     </style>
@@ -194,12 +201,19 @@ html {
     <h1>Shane & Rabia are getting married!</h1>
     <nav>
         <!-- <a href="#story">Our Story</a> -->
+        <a href="#countdown-section">Countdown</a>
         <a href="#details">Wedding Details</a>
         <a href="#rsvp">RSVP</a>
     </nav>
 </header>
 
-<div id="countdown">Loading countdown...</div>
+<div id="countdown-section">
+
+    <section id="countdown-section">
+        <div id="countdown">00:00:00</div>
+    </section>
+</div>
+
 
 <!-- <section id="story">
     <h2>Our Story</h2>
@@ -258,11 +272,23 @@ html {
 <section id="rsvp" class="details-style">
     <div>
         <h2>How to RSVP</h2>
-        <p>Fill out the form to confirm your attendance.     <p><a href="https://forms.gle/xErbWEt8nKHweFx57">Click here to RSVP</a></p></p>
+        <p>
+            <a href="https://forms.gle/xErbWEt8nKHweFx57"
+               style="display: inline-block; padding: 15px 25px; background-color: #78a58b;
+                      color: white; text-decoration: none; font-size: 18px; font-weight: bold;
+                      border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+                      transition: background-color 0.3s ease, transform 0.2s ease;"
+               onmouseover="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
+               onmouseout="this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'"
+               ontouchstart="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
+               ontouchend="setTimeout(() => { this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'; }, 200)">
+              ✨ Click Here to RSVP ✨
+            </a>
+          </p>
     </div>
     <div>
         <h2>Deadline</h2>
-        <p>Please RSVP by [insert date].</p>
+        <p>Please RSVP by July 15 2025.</p>
     </div>
     <div>
         <h2>Contact</h2>
