@@ -163,6 +163,32 @@ html {
         padding: 20px;
         border-radius: 10px;
     }
+
+
+    .details-style {
+    display: flex;
+    flex-direction: column; /* Stack items in rows */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    min-height: 100vh; /* Full screen height */
+    padding: 20px;
+}
+
+
+
+
+
+table {
+    margin: auto; /* This centers the table horizontally */
+    border-collapse: collapse; /* Merges borders */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center; /* Center text inside the table */
+    border: 1px solid #ddd; /* Add border to table cells */
+}
+
     /* #details {
 
     display: flex;
@@ -194,15 +220,19 @@ html {
     }
 
 
+
+
     .details-style div {
-        width: 80%; /* Make each row take up 80% of the width */
-        padding: 20px;
-        /* background: white; */
-        margin: 10px 0;
-        text-align: center;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
-        transition: background-color 0.3s ease; /* Smooth color transition */
-    }
+    width: 80%; /* Make each row take up 80% of the width */
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside the div */
+    justify-content: center; /* Center content inside the div */
+}
 
     /* Alternate background colors for better contrast */
     .details-style div:nth-child(odd) {
@@ -223,7 +253,7 @@ html {
     .details-style div.tapped {
         background-color: rgb(178, 172, 136, 0.3) !important;
     }
-        
+
     </style>
 </head>
 <body>
@@ -295,6 +325,47 @@ html {
     <div>
         <h2>Schedule</h2>
         <p>Timings for the ceremony and reception.</p>
+        <!-- <section id="timing-section"> -->
+            <h2 style="text-align: center;">⏰ Wedding Schedule</h2>
+            <!-- <div style="display: flex; justify-content: center; align-items: center; height: 100%;"> -->
+
+                    <!-- <table border="1">
+                   <tr style=" color: white">
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                      </tr> 
+                      
+                      <tr style=" color: white">
+                        <td>Row 1, Column 1</td>
+                        <td>Row 1, Column 2</td>
+                      </tr>
+                      <tr style=" color: white">
+                        <td>Row 2, Column 1</td>
+                        <td>Row 2, Column 2</td>
+                      </tr>
+                    </table> -->
+
+                    <table border="1" style="border-collapse: collapse; width: 80%; max-width: 600px; text-align: center;">
+                        <tr style=" color: white">
+                            <!-- ; font-size: 1.5rem; -->
+                            <th style="padding: 15px; ">Event</th>
+                            <th style="padding: 15px;">Time</th>
+                        </tr>
+                        <tr style=" color: white">
+                            <td style="padding: 15px; background: rgba(110, 121, 67, 0.1);"> 💍 Wedding Ceremony</td>
+                            <td style="padding: 15px;">4:00 PM</td>
+                        </tr>
+                        <tr style=" color: white">
+                            <td style="padding: 15px;"> 🍸 Cocktail Hour</td>
+                            <td style="padding: 15px;">4:45 PM</td>
+                        </tr>
+                        <tr style=" color: white">
+                            <td style="padding: 15px; background: rgba(110, 121, 67, 0.1);">🎉 Reception</td>
+                            <td style="padding: 15px;">6:00 PM</td>
+                        </tr>
+                    </table>
+      
+            
     </div>
     <div>
         <h2>Dress Code</h2>
