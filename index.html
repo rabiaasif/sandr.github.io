@@ -172,6 +172,7 @@ html {
     justify-content: center; /* Center content vertically */
     min-height: 100vh; /* Full screen height */
     padding: 20px;
+    padding-top: 80px;
 }
 
 
@@ -266,7 +267,6 @@ th, td {
     flex-wrap: wrap; 
     justify-content: center; 
     gap: 10px; 
-
     padding: 10px;">
     
     <a href="#countdown-section" style="color: white; text-decoration: none; padding: 10px;">Countdown</a>
@@ -283,46 +283,6 @@ th, td {
     </section>
 </div>
 
-
-<!-- <section id="story">
-    <h2>Our Story</h2>
-    <p>[Brief description of how you met, your love story, or fun facts]</p>
-</section> -->
-<!-- 
-<section class="photo-row">
-    <img src="images/1.jpg" alt="Photo 1">
-    <img src="images/2.jpg" alt="Photo 2">
-    <img src="images/3 copy.jpg" alt="Photo 3">
-    <img src="images/4.jpg" alt="Photo 4">
-    <img src="images/5.jpg" alt="Photo 4">
-    <img src="images/6.jpg" alt="Photo 4">
-    <img src="images/7.jpg" alt="Photo 4">
-    <img src="images/8.jpg" alt="Photo 4">
-    <img src="images/9.jpg" alt="Photo 4">
-</section> -->
-
-<!-- <section id="details">
-    <div>
-        <h2>Wedding Venue</h2>
-        <p>Location and address go here.</p>
-    </div>
-    <div>
-        <h2>Schedule</h2>
-        <p>Timings for ceremony and reception.</p>
-    </div>
-    <div>
-        <h2>Dress Code</h2>
-        <p>Formal, semi-formal, or casual?</p>
-    </div>
-</section>
-
-<section id="rsvp">
-    <h2>RSVP</h2>
-    <p>Please let us know if you can attend our special day!</p>
-    <p><a href="https://forms.gle/xErbWEt8nKHweFx57">Click here to RSVP</a></p>
-</section> -->
-
-
 <section id="details" class="details-style">
     <div>
         <h2>Wedding Venue</h2>
@@ -330,15 +290,6 @@ th, td {
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.732350586314!2d-79.49669802336997!3d43.650952552575454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36f545c00001%3A0x14c36a3d0707ca14!2sOld%20Mill%20Toronto%20Event%20Venue!5e0!3m2!1sen!2sca!4v1743733396672!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p>Parking is located near the bottom of the hill, the parking pass will be emailed to you</p>
     </div>
-
-    <!-- <div style="width: 100%; height: 60vh; max-width: 800px; margin: auto;">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5773.732350586314!2d-79.49669802336997!3d43.650952552575454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b36f545c00001%3A0x14c36a3d0707ca14!2sOld%20Mill%20Toronto%20Event%20Venue!5e0!3m2!1sen!2sca!4v1743733396672!5m2!1sen!2sca"
-            style="width: 100%; height: 100%; border: 0;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-    </div> -->
 
     <div>
         <h2>Schedule</h2>
@@ -404,6 +355,7 @@ th, td {
                       color: white; text-decoration: none; font-size: 18px; font-weight: bold;
                       border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
                       transition: background-color 0.3s ease, transform 0.2s ease;"
+                      onclick="window.open(this.href, '_blank'); return false;"
                onmouseover="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
                onmouseout="this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'"
                ontouchstart="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
