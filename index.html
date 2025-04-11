@@ -11,48 +11,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Rouge+Script&display=swap" rel="stylesheet">
 
     <style>
+        <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
 
-html, body {
-    height: 100%;
-    margin: 0;
-}
+    html {
+        scroll-behavior: smooth;
+    }
 
-html {
-    scroll-behavior: smooth;
-}
-
-
-        body {
-            margin: 0px;
-    min-height: 100%;
-    width: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            margin: 0;
-            /* padding: 0; */
-            background-image:  url("./images/bg.png");
-
-            background-size: 150px;
-            margin: 0;
-            /* width: 100%; height: 100%; */
-            display: flex;
-    flex-direction: column;
-            
-        }
-        * {
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        background-image: url("./images/bg.png");
+        background-size: 150px;
+        color: #333;
+        min-height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
     header {
         background-image: url('./images/1.JPG');
-        background-size: cover; /* Ensures the image covers the full header */
-        background-position: center; /* Centers the image */
-        background-repeat: no-repeat; /* Prevents tiling */
-        min-height: 100vh; /* Makes header as tall as the screen */
-        width: 100vw; /* Ensures full width */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -61,45 +54,32 @@ html {
         color: white;
         text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     }
-        h1 {
-            margin: 0;
-            font-family: "Rouge Script", cursive;
-            font-weight: 400;
-            font-style: normal;
-        }
 
-        h2 {
-            margin: 0;
-            font-family: "Rouge Script", cursive;
-            font-weight: 400;
-            font-style: normal;
-            color: white;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
+    h1, h2 {
+        margin: 0;
+        font-family: "Rouge Script", cursive;
+        font-weight: 400;
+        font-style: normal;
+    }
 
-        p {
-            margin: 0;
-            font-family: "Quicksand", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: white;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
+    h2, p, a {
+        color: white;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
 
-        a {
-            margin: 0;
-            font-family: "Quicksand", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            color: white;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        }
+    p, a {
+        font-family: "Quicksand", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+    }
 
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            color: white;
+    nav {
+        margin: 20px 0;
+    }
+
+    nav a {
+        color: white;
         text-decoration: none;
         font-size: 1.2rem;
         margin: 0 15px;
@@ -107,52 +87,52 @@ html {
         border-radius: 5px;
         background: rgba(0, 0, 0, 0.3);
         transition: background 0.3s ease-in-out;
-        }
-        nav a:hover {
-        background: rgba(0, 0, 0, 0.6);
-        
     }
-        section {
-            padding: 20px;
-            min-height: 100vh; /* Each section fills the entire screen */
-    width: 100vw; /* Full width */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color:  rgba(110, 121, 67, 0.5);
-            margin-top: auto;
-        }
-        .photo-row {
-            display: flex;
-            justify-content: center; /* Centers the row */
-            gap: 10px; /* Adds space between images */
-            flex-wrap: wrap; /* Ensures responsiveness */
-            padding: 20px;
-        }
 
-        .photo-row img {
-            width: 150px; /* Fixed width */
-            height: 150px; /* Fixed height */
-            object-fit: cover; /* Ensures the images maintain aspect ratio and fill the square */
-            border-radius: 10px; /* Optional: Rounds the corners */
-        }
+    nav a:hover {
+        background: rgba(0, 0, 0, 0.6);
+    }
 
-        #countdown-section {
-        height: 100vh; /* Full screen height */
+    section {
+        padding: 20px;
+        min-height: 100vh;
+        width: 100vw;
         display: flex;
         align-items: center;
         justify-content: center;
-        /* background: rgba(110, 121, 67, 0.2); Light background tint */
-        width: 100%; /* Full width */
+        text-align: center;
     }
 
-    /* Style the countdown itself */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(110, 121, 67, 0.5);
+        margin-top: auto;
+    }
+
+    .photo-row {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .photo-row img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    #countdown-section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     #countdown {
         font-size: 3rem;
         font-weight: bold;
@@ -164,96 +144,47 @@ html {
         border-radius: 10px;
     }
 
-
     .details-style {
-    display: flex;
-    flex-direction: column; /* Stack items in rows */
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    min-height: 100vh; /* Full screen height */
-    padding: 20px;
-    padding-top: 80px;
-}
-
-
-
-
-
-table {
-    margin: auto; /* This centers the table horizontally */
-    border-collapse: collapse; /* Merges borders */
-}
-
-th, td {
-    padding: 10px;
-    text-align: center; /* Center text inside the table */
-    border: 1px solid #ddd; /* Add border to table cells */
-}
-
-    /* #details {
-
-    display: flex;
-    flex-direction: column; /* Stack items in rows */
-    /* align-items: center; Center content */
-    /* justify-content: center; */
-    /* min-height: 100vh; Full screen height */
-    /* padding: 20px; */
-/* } */
-
-/*#details div {
-    width: 80%; /* Make each row take up 80% of the width */
-    /* padding: 20px; */
-    /* background: white; Optional: Add a white background */
-    /* margin: 10px 0; Add spacing between rows */
-    /* text-align: center; */
-    /* box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); Soft shadow for effect */
-/* }  */
-
-    /* Apply the same row layout to both sections */
-    .details-style {
-        /* background-color: #f8f9fa; Light background */
         display: flex;
-        flex-direction: column; /* Stack items in rows */
-        align-items: center; /* Center content */
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        min-height: 100vh; /* Full screen height */
-        padding: 20px;
+        min-height: 100vh;
+        padding: 80px 20px 20px;
     }
-
-
-
 
     .details-style div {
-    width: 80%; /* Make each row take up 80% of the width */
-    padding: 20px;
-    margin: 10px 0;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for effect */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content inside the div */
-    justify-content: center; /* Center content inside the div */
-}
-
-    /* Alternate background colors for better contrast */
-    .details-style div:nth-child(odd) {
-        /* background-color: #fff; */
-        background-color: rgb(178, 172, 136, 0.3)
+        width: 80%;
+        padding: 20px;
+        margin: 10px 0;
+        text-align: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(178, 172, 136, 0.3);
     }
 
-    .details-style div:nth-child(even) {
-        /* background-color: #f0f0f0; */
-        background-color: rgb(178, 172, 136, 0.3);
-        
-    }
     .details-style div:hover {
-        background-color: rgba(136, 178, 138, 0.3); /* Light red when hovered */
-        /* cursor: pointer; Change cursor to indicate it's interactive */
+        background-color: rgba(136, 178, 138, 0.3);
     }
 
     .details-style div.tapped {
-        background-color: rgb(178, 172, 136, 0.3) !important;
+        background-color: rgba(178, 172, 136, 0.3) !important;
     }
+
+    table {
+        margin: auto;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+    }
+</style>
 
     </style>
 </head>
@@ -272,6 +203,7 @@ th, td {
     <a href="#countdown-section" style="color: white; text-decoration: none; padding: 10px;">Countdown</a>
     <a href="#details" style="color: white; text-decoration: none; padding: 10px;">Wedding Details</a>
     <a href="#rsvp" style="color: white; text-decoration: none; padding: 10px;">RSVP</a>
+    <a href="#rsvp" style="color: white; text-decoration: none; padding: 10px;">Add to Calendar</a>
 
 </nav>
 </header>
@@ -371,21 +303,17 @@ th, td {
     <div>
         <h2>Contact</h2>
       
- 
-
-
-<a href="mailto:rabia.asif@alumni.utoronto.ca%2Csd1311@hotmail.com" 
-style="display: inline-block; padding: 15px 25px; background-color: #78a58b;
-       color: white; text-decoration: none; font-size: 18px; font-weight: bold;
-       border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-       transition: background-color 0.3s ease, transform 0.2s ease;"
-         onclick="window.open(this.href, '_blank'); return false;"
-onmouseover="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
-onmouseout="this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'"
-ontouchstart="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
-ontouchend="setTimeout(() => { this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'; }, 200)">
-📩 Email Us
-</a>
+        <a href="mailto:rabia.asif@alumni.utoronto.ca,sd1311@hotmail.com" 
+        style="display: inline-block; padding: 15px 25px; background-color: #78a58b;
+               color: white; text-decoration: none; font-size: 18px; font-weight: bold;
+               border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+               transition: background-color 0.3s ease, transform 0.2s ease;"
+        onmouseover="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
+        onmouseout="this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'"
+        ontouchstart="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
+        ontouchend="setTimeout(() => { this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'; }, 200)">
+         📩 Email Us
+     </a>
 
     </div>
 </section>
