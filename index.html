@@ -283,7 +283,7 @@
         <p>
             <a href="https://forms.gle/xErbWEt8nKHweFx57"
                style="display: inline-block; padding: 15px 25px; background-color: #78a58b;
-                      color: white; text-decoration: none; font-size: 18px; font-weight: bold;
+                      color: white; text-decoration: none; font-size: 15px; font-weight: bold;
                       border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
                       transition: background-color 0.3s ease, transform 0.2s ease;"
                       onclick="window.open(this.href, '_blank'); return false;"
@@ -316,15 +316,19 @@
 
     <div>
         <h2>Add to iCal 📅</h2>
-    <a 
-    href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0A VERSION:2.0%0A PRODID:-//Your Organization//Your Product//EN%0A METHOD:PUBLISH%0A BEGIN:VEVENT%0A UID:123456789%0A DTSTAMP:20230816T160000Z%0A DTSTART:20230816T160000Z%0A DTEND:20230817T003000Z%0A SUMMARY:Your Event Title%0A DESCRIPTION:Event Details%0A LOCATION:Event Location%0A END:VEVENT%0A END:VCALENDAR"
-    style="display: inline-block; padding: 15px 25px; background-color: #78a58b;
-           color: white; text-decoration: none; font-size: 18px; font-weight: bold;
-           border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-           transition: background-color 0.3s ease, transform 0.2s ease;"
->
-    Click here 📲
-</a>
+        <a 
+        href="S+R_Wedding.ics" 
+        download="S+R_Wedding.ics"
+        style="display: inline-block; padding: 15px 25px; background-color: #78a58b;
+               color: white; text-decoration: none; font-size: 18px; font-weight: bold;
+               border-radius: 10px; box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+               transition: background-color 0.3s ease, transform 0.2s ease;"
+        onmouseover="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
+        onmouseout="this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'"
+        ontouchstart="this.style.backgroundColor='#365944'; this.style.transform='scale(1.05)'"
+        ontouchend="setTimeout(() => { this.style.backgroundColor='#78a58b'; this.style.transform='scale(1)'; }, 200)">
+        iCalendar Link 📅
+      </a>
         
     </div>
     <div>
